@@ -30,51 +30,8 @@ Authors: \<[Henri Malahieude](https://github.com/HenriMalahieude)\> \<[Tyler Cha
    
  * **Design Patterns:**
    
-   *We are using the Strategy Design Pattern. It is most efficient for us to use it in this context, because the Strategy Abstract Class (in this case the Piece class) can be implemented by the context to easily house each different type of piece in the Chess game. Strategy allows us to easily implement polymorphism, and was almost implemented by accident before knowledge of the Strategy Design Pattern 
- 
- ## Screenshots
-
-* Sample game:
- > ![image](https://user-images.githubusercontent.com/102566544/170843402-e598d853-775a-4475-a587-3edd27527f04.png)
- > ![image](https://user-images.githubusercontent.com/102566544/170843420-ba709e48-ddb2-4523-b9e7-867f9334c3e0.png)
- > ![image](https://user-images.githubusercontent.com/102566544/170843439-5468c35c-b6bc-4015-a4f5-b494bd13f425.png)
-
-* Timer:
- > ![image](https://user-images.githubusercontent.com/102566544/171079679-b6dccd4f-9e0f-43eb-a29d-e2ab100faad2.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171080014-179f8690-bf1a-47c3-99a7-559aa9b2f68f.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171080551-d1b7f84d-4c5a-48c0-bea7-d84114b04651.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171081191-5f45a35f-f5b8-406d-bb0d-dacb0db030bc.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171082007-7905a350-157f-4799-9f1f-f0ead940e135.png)
-
- 
-* Castling:
- > ![image](https://user-images.githubusercontent.com/102566544/170843448-cd3ccbe0-2776-4f15-bbc9-3b8186d8a2ce.png)
- > ![image](https://user-images.githubusercontent.com/102566544/170843501-b03c6ee8-479a-423b-93ed-d77cccb508ab.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171080839-1ca01f3e-f9f9-44a0-9eed-536c248bdbc7.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171081640-def8624a-b943-4d1e-a953-dfeda3804b28.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171082087-018fc022-0b51-458f-85ed-9f0e4307ab2f.png)
- 
- 
-* Checkmate:
- > ![image](https://user-images.githubusercontent.com/102566544/171076205-bb1ffee8-56db-49f8-a531-607101ef64e8.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171076403-d3632a5f-697a-4eee-88eb-e310d0d94b6c.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171076581-ea263d7c-27f5-4cd7-a940-327356fa6b38.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171082279-26e0be7e-c8db-4acd-a791-7130a54d2c48.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171082498-41b0aefa-604d-4228-925d-7e1a572cac0f.png)
-
-
-* Stalemate:
- > ![image](https://user-images.githubusercontent.com/102566544/171076893-18d69989-4fa8-43d6-adae-9932d1b33102.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171083572-26593cf5-18d3-4677-a3f8-5a61f483c213.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171086358-d37a3a6d-a051-4902-90e7-73daba0c8e67.png)
-
-
-
-* Promotion:
- > ![image](https://user-images.githubusercontent.com/102566544/171083247-764751e6-20c5-4ba3-a0ce-67d050e7680b.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171084507-953a7be2-ed1a-48ea-93b8-4486d23c5403.png)
- > ![image](https://user-images.githubusercontent.com/102566544/171086093-2c42cf86-77b7-4031-9e58-69ecaa2a0573.png)
-
+   *We are using the Strategy Design Pattern. It is most efficient for us to use it in this context, because the Strategy Abstract Class (in this case the Piece class) can be implemented by the context to easily house each different type of piece in the Chess game. Strategy allows us to easily implement polymorphism, and was almost implemented by accident before knowledge of the Strategy Design Pattern
+   
  ## Class Diagram
  [Chess(5).pdf](https://github.com/cs100/final-project-cs100-dream-team/files/8801785/Chess.5.pdf)
 
