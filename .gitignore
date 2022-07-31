@@ -1,0 +1,9 @@
+*.o
+*.exe
+*.a
+*.html
+*.js
+*.wasm
+*.data
+
+.vscode
