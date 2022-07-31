@@ -3,16 +3,16 @@ UNUSED = -O2 -Wall -Wno-missing-braces -I ./include/ -L ./lib/ -lraylib -lopengl
 FLAGS = -O2 -Wall -I ./include/ -L ./lib/ -lraylib -s USE_GLFW=3 -s ASYNCIFY -DPLATFORM_WEB -std=c++17 --preload-file resources/
 
 all: ./Visuals.o ./Piece.o ./GameBoard.o ./Check.o
-	$(CC) ../main.cpp ./visuals.o ./Piece.o ./GameBoard.o ./Check.o -o Chess.html $(FLAGS)
+	$(CC) ../src/main.cpp ./visuals.o ./Piece.o ./GameBoard.o ./Check.o -o index.html $(FLAGS)
 
-Visuals.o: ../Visuals/Visuals.cpp
-	$(CC) ../Visuals/Visuals.cpp -c $(FLAGS)
+Visuals.o: ../src/Visuals/Visuals.cpp
+	$(CC) ../src/Visuals/Visuals.cpp -c $(FLAGS)
 
-Piece.o: ../Piece/Piece.cpp
-	$(CC) ../Piece/Piece.cpp -c $(FLAGS)
+Piece.o: ../src/Piece/Piece.cpp
+	$(CC) ../src/Piece/Piece.cpp -c $(FLAGS)
 
-GameBoard.o: ../GameBoard/GameBoard.cpp
-	$(CC) ../GameBoard/GameBoard.cpp -c $(FLAGS)
+GameBoard.o: ../src/GameBoard/GameBoard.cpp
+	$(CC) ../src/GameBoard/GameBoard.cpp -c $(FLAGS)
 
-Check.o: ../Check/Check.cpp
-	$(CC) ../Check/Check.cpp -c $(FLAGS)
+Check.o: ../src/Check/Check.cpp
+	$(CC) ../src/Check/Check.cpp -c $(FLAGS)
