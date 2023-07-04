@@ -27,18 +27,35 @@ int main(){
     SetTargetFPS(30);// Set our game to run at 60 frames-per-second
     ShowCursor();
 
+    int debTouchX = -1;
+    int debTouchY = -1;
+
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         //Inputs
         //----------------------------------------------------------------------------------
-        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && gm.get_winner() == Neutral && !gm.get_stalemate()){
-            mouseX = GetMouseX();
-            mouseY = GetMouseY();
+        bool mouseInput = IsMouseButtonPressed(MOUSE_BUTTON_LEFT);
+        bool touchInput = GetTouchPointCount() > 0;
+        if ((mouseInput || touchInput) && gm.get_winner() == Neutral && !gm.get_stalemate()){
+            mouseX = !touchInput ? GetMouseX() : GetTouchX();
+            mouseY = !touchInput ? GetMouseY() : GetTouchY();
 
-            Coordinate gridded = BoardGridFormat(mouseX, mouseY);
-            gm.select_move_piece(gridded);
-            //std::cout << "( " << mouseX << ", " << mouseY << " ) ; ( " << gridded.x << ", " << gridded.y << " )\n";
+            bool touchIsNew = true;
+            if (touchInput) {
+                if (debTouchX == mouseX && debTouchY == mouseY){
+                    touchIsNew = false;
+                }else{
+                    debTouchX = mouseX;
+                    debTouchY = mouseY;
+                }
+            }
+
+            if (touchIsNew){
+                Coordinate gridded = BoardGridFormat(mouseX, mouseY);
+                gm.select_move_piece(gridded);
+                std::cout << "( " << mouseX << ", " << mouseY << " ) ; ( " << gridded.x << ", " << gridded.y << " )\n";
+            }
         }
 
         // Update
