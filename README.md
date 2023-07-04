@@ -36,9 +36,11 @@ Authors: \<[Henri Malahieude](https://github.com/HenriMalahieude)\> \<[Tyler Cha
  [Chess(5).pdf](https://github.com/cs100/final-project-cs100-dream-team/files/8801785/Chess.5.pdf)
 
  ## Installation/Usage
-  ## Install:
+  ## Install (OLD):
 * Download "Complete" folder
 * Open folder, run Chess.exe  (for Windows only)
+  ## How to Run:
+* Open the Github Page
   ## Running: 
    * Just start playing
    * Interact with pieces by clicking on them
