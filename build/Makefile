@@ -1,6 +1,7 @@
 CC = em++
 UNUSED = -O2 -Wall -Wno-missing-braces -I ./include/ -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
-FLAGS = -O2 -Wall -I ./include/ -L ./lib/ -lraylib -s USE_GLFW=3 -s ASYNCIFY -DPLATFORM_WEB -std=c++17 --preload-file resources/
+RAYLIB_PATH = C:\Users\there\OneDrive\Documents\Projects\Raylib\raylib\src
+FLAGS = -O2 -Wall -I $(RAYLIB_PATH) -L ./lib/ -lraylib -s USE_GLFW=3 -s ASYNCIFY -DPLATFORM_WEB -std=c++17 --preload-file resources/
 
 all: ./Visuals.o ./Piece.o ./GameBoard.o ./Check.o
 	$(CC) ../src/main.cpp ./visuals.o ./Piece.o ./GameBoard.o ./Check.o -o index.html $(FLAGS)
